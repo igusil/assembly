@@ -54,6 +54,14 @@ inc dx
 cmp dx, 199
 jl aqui3
 
+xor cx, cx
+xor dx, dx
+aqui4:
+int 0x10
+inc dx
+cmp dx, 99
+
+
 jmp $
 
 times 510 - ($ - $$) db 0
